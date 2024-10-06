@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+        :root{
+            --clr1: rgb(21,12,104);
+            --clr2: rgb(236,68,90);
+            --clr3: #fff;
+            --clr4: #000;
+            --clr5: lightgray;
+            --clr6: yellow;
+        }
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-family: 'PT Sans',sans-serif;
+            border: none;
+        }
+        html{
+            font-size: 56%;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        section{
+            padding: 7rem 9%;
+            margin-top: 7rem;
+        }
+        .btn{
+            margin-top: 2rem;
+            padding: 1.3rem 4rem;
+            font-size: 1.5rem;
+            text-transform: capitalize;
+            letter-spacing: 0.1rem;
+            font-weight: 600;
+            background-color: var(--clr2);
+            box-shadow: rgba(0,0,0,0.4);
+            transition: all 0.3s ease all;
+            cursor:pointer;
+            outline: none;
+            color: var(--clr3);
+        }
+        .btn:hover{
+            transform: translate(-1rem);
+            transition: all 0.5s ease;
+        }
+        .title{
+            text-align: center;
+            font-size: 2.5rem;
+            letter-spacing: .2rem;
+        }
+        .title span{
+            color:var(--clr2);
+            font-size: 4rem;
+        }
+        .head{
+            position:fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: var(--clr1);
+            padding:2rem 9%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .fa-heart{
+            color: red;
+        }
+        .head .logo{
+            font-size: 2.5rem;
+            color: var(--clr3);
+            font-weight: 600;
+            letter-spacing: 0.1rem;
+        }
+        span{
+            color: var(--clr3);
+        }
+        .head .navbar{
+            font-size: 1.8rem;
+            justify-content: space-between;
+            font-weight: 500;
+        }
+        .head .navbar a{
+            padding-left: 1.5rem;
+            color: var(--clr3);
+        }
+        #menu-bar{
+            display: none;
+            color: var(--clr3);
+        }
+        .home{
+            background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)),url("back1.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+        .home-image {
+            width: 200px;
+            height: auto;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .search-box{
+            margin: 20rem 0 0 0 ;
+            color: var(--clr3);
+            text-align: center;
+        }
+        .search-box h1{
+            font-size: 5.5rem;
+            text-transform: capitalize;
+            font-weight: 600;
+            letter-spacing: 0.2rem;
+        }
+        .search-box p{
+            font-size: 1.8rem;
+            margin: 0.5rem;
+        }
+        .search-field{
+            width: 25rem;
+            height: 4.5rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--clr2);
+        } 
+    </style>
+    <title>Wedding Planning Website</title>
+</head>
+<body>
+    <header class="head">
+        <a href="" class="logo"><i class="fas fa-heart"></i>&nbsp;Be<span>Together</span>Forever&nbsp;<i class="fas fa-heart"></i></a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="service.html">Service</a>
+            <a href="carddesign.html">Card Design</a>
+            <a href="registration.html">Register</a>
+            <a href="login.html">Login</a>
+        </nav>
+        <div id="menu-bar"><i class="fas fa-bars"></i></div>
+    </header>
+
+    <!-- Home section -->
+    <section id="home" class="home" home>
+        <form action="#">
+            <div class="search-box">
+                <img src="back1.jpeg" alt="Wedding Image" class="home-image">
+                <h1>Together is a beautiful place to be.</h1>
+                <p>Find The Best Wedding Vendors With Thousands of Trusted Reviews</p>
+                <select type="text" class="search-field">
+                    <option disabled selected>Select Vendor type</option>
+                    <option value="Wedding Venues">Wedding Venues</option>
+                    <option value="Family makeup">Family Makeup</option>
+                    <option value="Bridal makeup">Bridal Makeup</option>
+                    <option value="Groom Wear">Groom Wear</option>
+                    <option value="Wedding Decoration">Wedding Decoration</option>
+                </select>
+                <select type="text" class="search-field">
+                    <option disabled selected>City</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Jaipur">Jaipur</option>
+                </select>
+                <button class="btn">Search here...</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
