@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --clr1: rgb(21,12,104);
+            --clr2: rgb(236,68,90);
+            --clr3: #fff;
+            --clr4: #000;
+            --clr5: lightgray;
+            --clr6: yellow;
+        }
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-family: 'PT Sans',sans-serif;
+            border: none;
+        }
+        .services-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .services-col {
+            height: 22rem;
+            color: var(--clr5);
+            background: url("back-2.jpeg");
+            background-color: var(--clr5);
+            background-position: center;
+            background-size: cover;
+            border-radius: 15px;
+            flex: 1 1 25rem;
+            padding: 1.2rem;
+            margin: 1.5rem;
+        }
+        .services-col i {
+            padding: 2.2rem;
+            border: none;
+            background: aliceblue;
+            color: var(--clr2);
+            border-radius: 5rem;
+            font-size: 3rem;
+        }
+        .services-col h2 {
+            padding: 1rem 0;
+            font-size: 1.2rem;
+            color: var(--clr4);
+        }
+        .services-col p {
+            font-size: 1.2rem;
+            color: var(--clr4);
+        }
+        .title {
+            text-align: center;
+            font-size: 2.5rem;
+            letter-spacing: .2rem;
+        }
+        .title span {
+            color: var(--clr2);
+            font-size: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <section class="service" id="service">
+        <div class="title">
+            <h1><span>Service</span></h1>
+        </div>
+        <div class="services-row">
+            <div class="services-col">
+                <i class="fas fa-book-open"></i>
+                <h2>Invitation</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis repudiandae maxime tempora porro?</p>
+            </div>
+            <div class="services-col">
+                <i class="fas fa-camera"></i>
+                <h2>Photography & Video</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis repudiandae maxime tempora porro?</p>
+            </div>
+            <div class="services-col">
+                <i class="fas fa-brush"></i>
+                <h2>Beauty & Makeup</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis repudiandae maxime tempora porro?</p>
+            </div>
+            <div class="services-col">
+                <i class="fas fa-pagelines"></i>
+                <h2>Wedding Flowers</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis repudiandae maxime tempora porro?</p>
+            </div>
+            <div class="services-col">
+                <i class="fas fa-birthday-cake"></i>
+                <h2>Wedding Cake</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis repudiandae maxime tempora porro?</p>
+            </div>
+            <div class="services-col">
+                <i class="fas fa-music"></i>
+                <h2>Music Band</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis repudiandae maxime tempora porro?</p>
+            </div>
+            <div class="services-col">
+                <i class="fas fa-utensils"></i>
+                <h2>Catering</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis repudiandae maxime tempora porro?</p>
+            </div>
+            <div class="services-col">
+                <i class="fas fa-ring"></i>
+                <h2>Jewellery</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis repudiandae maxime tempora porro?</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

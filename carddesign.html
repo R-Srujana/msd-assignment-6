@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design</title>
+    <style>
+        :root {
+            --clr2: rgb(236, 68, 90);
+        }
+
+        .Card-Design .invitation-box {
+            flex: 1 1 25rem;
+            margin: 1rem;
+            position: relative;
+            border: 0.2rem dashed var(--clr2);
+            border-radius: 0.6rem;
+            padding: 2rem;
+            overflow: hidden;
+            height: 30rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Card-Design .invitation-box img {
+            width: 100%;
+            height: auto;
+            max-height: 100%;
+            object-fit: cover;
+        }
+
+        .invitation-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .Card-Design .invitation-box:hover {
+            transform: translateY(-2rem);
+            transition: 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <section class="Card-Design" id="Card-Design">
+        <div class="title">
+            <h1>Card<span>Design</span></h1>
+            <p>Choose the best card design</p>
+        </div>
+        <div class="invitation-row">
+            <div class="invitation-box">
+                <img src="https://www.craftyartapp.com/blog/wp-content/uploads/2023/05/4634-Wedding-Invitation-English-10-scaled.jpg" alt="Wedding Invitation 1">
+            </div>
+            <div class="invitation-box">
+                <img src="https://www.craftyartapp.com/blog/wp-content/uploads/2023/06/Wedding-Invitation-Card-4-min-724x1024.jpg" alt="Wedding Invitation 2">
+            </div>
+            <div class="invitation-box">
+                <img src="http://www.outfittrends.com/wp-content/uploads/2016/10/wedding-invitation-cards-bangalore-best-wedding-invitations-cards-wedding-invitation-cards-at.jpg" alt="Wedding Invitation 3">
+            </div>
+            <div class="invitation-box">
+                <img src="https://www.craftyartapp.com/blog/wp-content/uploads/2023/08/6967-Wedding-Invitation-A4-Template-77-min-1024x731.webp" alt="Wedding Invitation 4">
+            </div>
+            <div class="invitation-box">
+                <img src="https://www.craftyartapp.com/blog/wp-content/uploads/2023/07/main-2.webp" alt="Wedding Invitation 5">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
